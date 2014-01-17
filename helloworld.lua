@@ -3,7 +3,7 @@ PLUGIN.Title = "Hello World"
 PLUGIN.Description = "Says hello to all that is worthy"
 
 function PLUGIN:Init()
-	self:AddChatCommand( "say_hello", self.cmdShare )
+	self:AddChatCommand( "say_hello", self.say_hello )
 end
 
 function PLUGIN:say_hello( netuser, cmd, args )
