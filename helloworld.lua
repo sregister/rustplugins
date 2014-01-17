@@ -22,6 +22,6 @@ function PLUGIN:say_hello( netuser, cmd, args )
 	end
 	local userID = rust.GetUserID( netuser )
 	local targetID = rust.GetUserID( targetuser )
-	rust.BroadcastChat ( "", "Hello" .. rust.QuoteSafe (targetuser.displayName) )
+	rust.BroadcastChat ( "Hello" .. rust.QuoteSafe (targetuser.displayName) )
 	return
 end
