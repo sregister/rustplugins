@@ -1,9 +1,9 @@
-
 PLUGIN.Title = "Airdrop"
 PLUGIN.Description = "Performs timed airdrops"
 
 function PLUGIN:Init()
-		timer.Repeat(30, self.drop)
+		--change 3600 to any number of seconds
+		timer.Repeat(3600, self.drop)
 end
 
 function PLUGIN:drop()
